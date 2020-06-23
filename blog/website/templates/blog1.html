@@ -1,0 +1,144 @@
+
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Jonny Dain</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="{% static 'website/css/animate.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'website/css/bootstrap.min.css' %}" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+</head>
+
+
+<body>
+
+
+
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container"> 
+      <!-- Brand 
+      <a class="navbar-brand mr-auto" href="#"><img src="{% static 'website/images/logo.png' %}" alt="FoxPro" /></a> 
+    -->
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>
+      
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"> <a class="nav-link" href="#">Home</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#about-us">About me</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="{% url 'blog' %}">Blog</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Portfolio</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a> </li>
+        </ul>
+        <!--
+        <ul class="navbar-nav ml-5">
+          <li class="nav-item"> <a class="nav-link btn btn-danger" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> </li>
+        </ul>
+        --->
+      </div>
+    </div>
+  </nav>
+<div class="conatiner">
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+        Launch demo modal
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade modal-xl" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio quas, nostrum quia enim doloribus repudiandae minus, adipisci beatae voluptates nam earum, dolorem velit libero tenetur laudantium aliquam totam corrupti perferendis?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sint fugit doloremque facere delectus est quis ex, iste fuga! Sapiente voluptatum obcaecati ipsam, perspiciatis ad fugit quis autem illum. Debitis.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptatibus sint atque, iste perferendis commodi optio neque quisquam ullam, nostrum recusandae, repellendus vero! Quis rerum saepe aliquid amet perspiciatis voluptatem!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias et consequuntur odio quaerat cum soluta numquam labore nulla hic! Ad soluta sint iure eius, minus repudiandae natus exercitationem ab facere.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero a ea illum. Rerum optio vero eos quis et eaque voluptates. Quibusdam neque tempora laboriosam quae minima officiis unde sit architecto.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, ducimus, voluptas commodi ullam quae minima quasi inventore repudiandae, placeat perferendis quibusdam culpa ipsum nobis! Omnis voluptatum deserunt voluptates eaque! Aperiam.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur fugiat aliquid corrupti perspiciatis? Impedit illum repellat accusantium, assumenda quaerat saepe quod ipsum, odio exercitationem error eum veritatis asperiores porro dolor.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nostrum ut molestias, perferendis vel nobis aliquam minus recusandae veritatis quasi officiis accusamus, commodi eligendi labore. Quasi quidem magni error saepe?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style>
+            .modal-header{
+                background-color: grey;
+            
+            }
+            .modal-body{
+                width: 100%;
+
+            }
+            
+        </style>
+
+
+      <!-- here -->
+      <div class="row gallery">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body mb-4 wow bounceInLeft" data-wow-delay=".25s">
+                  <h4 class="card-title">CODING</h4>
+                  <p class="card-text">I just wanted to sincerely thank you for the opportunity to represent Precision Nutrition and the US at such an amazing event. </p>
+                </div>
+                <img class="card-img-top img-fluid wow bounceInRight" data-wow-delay=".25s" src="{% static 'website/images/karting.jpg' %}" alt="Card image"> </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card"> <img class="card-img-top img-fluid wow bounceInUp" data-wow-delay=".25s" src="{% static 'website/images/art.jpg' %}" alt="Card image">
+                <div class="card-body mt-4 wow bounceInDown" data-wow-delay=".25s">
+                  <h4 class="card-title">CREATIVITY</h4>
+                  <p class="card-text">I just wanted to sincerely thank you for the opportunity to represent Precision Nutrition and the US at such an amazing event. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body mb-4 wow bounceInRight" data-wow-delay=".25s">
+                  <h4 class="card-title">PUBLIC SPEAKING</h4>
+                  <p class="card-text">During my time at school I got the responsibility of being Head Boy. Having good public awareness and social skills was a critical part of this role.  </p>
+                </div>
+                <img class="card-img-top img-fluid wow bounceInLeft" data-wow-delay=".25s" src="{% static 'website/images/ccf.jpg' %}" alt="Card image"> </div>
+            </div>
+          </div>
+          
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="{% static 'website/js/jquery.min.js' %}"></script>
+<script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'website/js/parallax.js' %}"></script>
+<script src="{% static 'website/js/wow.js' %}"></script>
+<script src="{% static 'website/js/main.js' %}"></script>
+
+</body>
+</html>

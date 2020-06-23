@@ -1,0 +1,817 @@
+{% load static %}
+<!doctype html>
+
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Jonny Dain</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="{% static 'website/css/animate.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'website/css/bootstrap.min.css' %}" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+</head>
+
+
+<body>
+    
+
+<div class="container-fluid pl-0 pr-0 bg-img clearfix parallax-window2" data-parallax="scroll" data-image-src="{% static 'website/images/bannerbig.jpg' %}">
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container"> 
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>
+      
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"> <a class="nav-link" href="#">Home</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#about-us">About me</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#blog-post">Blog</a> </li>
+          <!--<li class="nav-item"> <a class="nav-link" href="#">Portfolio</a> </li>-->
+          <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a> </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="fh5co-banner-text-box">
+      <div class="quote-box pl-5 pr-5 wow bounceInRight">
+        <h2> Jonathan Dain <br><span>computer scientist</span> </h2>
+      </div>
+      <a href="#" class="btn text-uppercase btn-outline-danger btn-lg mr-3 mb-3 wow bounceInUp">Download Curriculum Vitae</a> 
+      </div>
+  </div>
+</div>
+
+
+<div class="container-fluid fh5co-network">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h4 class="wow bounceInUp">UNIVERSITY OF</h4>
+        <h2 class="wow bounceInRight">BIRMINGHAM</h2>
+        <hr />
+        <h5 class="wow bounceInLeft">FROM 2019 TILL 2023</h5>
+        <p class="wow bounceInDown">Whilst studying at the university of Birmingham, doing computer science; I was lucky enough to recieve funding through Vodafone being a digital degree Apprentice. Out of 3000 people that applied I was lucky enough to reach the top 10 and make it onto the course. My computer science course also works in conjunction with Business and finance managment, teaching me suitable skills for the workplace </p>
+      </div>
+      
+      <div class="col-md-6">
+        <figure class="wow bounceInDown"> <img src="{% static 'website/images/aboutimg.jpg' %}" alt="gym" class="img-fluid" /> </figure>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div id="about-us" class="container-fluid fh5co-about-us pl-0 pr-0 parallax-window" data-parallax="scroll" data-image-src="{% static 'website/images/midbackground.jpg' %}">
+  <div class="container">
+    <div class="col-sm-6 offset-sm-6">
+      <h2 class="wow bounceInLeft" data-wow-delay=".25s">ABOUT ME</h2>
+      <hr/>
+      <p class="wow bounceInRight" data-wow-delay=".25s">A motivated, hard-working Computer Science student who enjoys working in a team to solve problems and finds solutions.</p>
+      <a class="btn btn-lg btn-outline-danger d-inline-block text-center mx-auto wow bounceInDown">Learn More</a> </div>
+  </div>
+</div>
+<div class="container-fluid fh5co-content-box">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 pr-0"><img src="{% static 'website/images/me.jpg' %}" alt="gym" class="img-fluid wow bounceInLeft" /> </div>
+      <div class="col-md-7 pl-0">
+        <div class="wow bounceInRight" data-wow-delay=".25s">
+          <div class="card-img-overlay">
+            <p>I Studied at RHB (Reddam House Berkshire) from year 5 through to year 13, undertaking both my A-levels and GCSE's through the school.
+              My keen love for Art and Computing comes from my GCSE years when I found myself spending extra hours finishing off projects. Unfortunetly Computing wasn't provided by the school so I could only took my Art skills further in A-level
+            </p>
+          </div>
+          <img src="{% static 'website/images/school.jpg' %}" alt="girls in gym" class="img-fluid" /> </div>
+      </div>
+    </div>
+    
+
+  
+    <div id="blog-post" class="row trainers pl-0 pr-0" >
+      <div class="col-12 bg-50">
+        <div class="quote-box2 wow bounceInDown" data-wow-delay=".25s">
+          <h2> RECENT BLOG POSTS </h2>
+        </div>
+      </div>
+      <div class="col-md-6 pr-5 pl-5">
+        <div class="card text-center wow bounceInLeft" data-wow-delay=".25s"> <img class="card-img-top rounded-circle img-fluid" src="{% static 'website/images/python.jpg' %}" alt="Card image">
+          <div class="card-body mb-5">
+            <h4 class="card-title">How Django works</h4>
+            <p class="card-text">This is a blog post discussing how my site is structured and an overall picture of how django works.</p>
+            <a class="btn btn-lg btn-outline-danger d-inline-block text-center mx-auto wow bounceInDown"  onclick = "openModal();currentSlide(1)">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 pl-5 pr-5">
+        <div class="card text-center wow bounceInRight" data-wow-delay=".25s"> <img class="card-img-top rounded-circle img-fluid" src=" {% static 'website/images/firstyear.jpg' %}" alt="Card image">
+          <div class="card-body mb-5">
+            <h4 class="card-title">First year work</h4>
+            <p class="card-text">With so much work leading up to university this post reflects on what I enjoyed in first year.</p>
+            <a class="btn btn-lg btn-outline-danger d-inline-block text-center mx-auto wow bounceInDown" onclick = "openModal();currentSlide(2)">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 pr-5 pl-5">
+          <div class="card text-center wow bounceInLeft" data-wow-delay=".25s"> <img class="card-img-top rounded-circle img-fluid" src="{% static 'website/images/books.jpg' %}" alt="Card image">
+            <div class="card-body mb-5">
+              <h4 class="card-title">Second year work</h4>
+              <p class="card-text">With second year just around the corner, this post shares what I am looking foward to next year.</p>
+              <a class="btn btn-lg btn-outline-danger d-inline-block text-center mx-auto wow bounceInDown"  onclick = "openModal();currentSlide(3)">Learn More</a>
+            </div>
+          </div>
+        </div>
+      <div class="col-md-6 pl-5 pr-5">
+          <div class="card text-center wow bounceInRight" data-wow-delay=".25s"> <img class="card-img-top rounded-circle img-fluid" src=" {% static 'website/images/dofe.jpg' %}" alt="Card image">
+            <div class="card-body mb-5">
+              <h4 class="card-title">Gold Dofe</h4>
+              <p class="card-text">I loved my time completing my Gold Duke of Edinburgh Award and this post shares how I completed it.</p>
+              <a class="btn btn-lg btn-outline-danger d-inline-block text-center mx-auto wow bounceInDown"   onclick = "openModal();currentSlide(4)">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <style>
+            .button {
+              display: inline-block;
+              border-radius: 4px;
+              background-color: #ff8013;
+              border: none;
+              color: #FFFFFF;
+              text-align: center;
+              font-size: 28px;
+              padding: 20px;
+              width: 300px;
+              transition: all 0.5s;
+              cursor: pointer;
+              margin: 5px;
+            }
+            
+            .button span {
+              cursor: pointer;
+              display: inline-block;
+              position: relative;
+              transition: 0.5s;
+            }
+            
+            .button span:after {
+              content: '\00bb';
+              position: absolute;
+              opacity: 0;
+              top: 0;
+              right: -20px;
+              transition: 0.5s;
+            }
+            
+            .button:hover span {
+              padding-right: 25px;
+            }
+            
+            .button:hover span:after {
+              opacity: 1;
+              right: 0;
+            }
+            .modal{
+              display: none;
+              position: fixed;
+              z-index: 1;
+              padding: 5px 0;
+              left: 0;
+              top: 0; 
+              width: 100%;
+              height: 100%; 
+              overflow: auto;
+              background-color: rgba(0,0,0,0.8); 
+
+              
+            }
+            .modal-content{
+              position: fixed;
+              top: 50%;
+              left: 50%;
+              height: 90%;
+              
+              transform: translate(-50%,-50%);
+              width: 80%;
+              padding: 0px;
+              box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+              background: rgb(223, 222, 222);
+              
+              
+              transition: 0.5s;
+              overflow-y: initial;
+
+            }
+            .modal-header{
+              background: rgb(236, 152, 84);
+              padding: 3px;
+              color: white;
+              box-shadow: 0 5px 8px 0 rgba(0, 0, 0, .30), 0 7px 20px 0 rgba(0, 0, 0, .30)
+
+            }
+            .close{
+              float: right;
+              font-size: 15px;
+              color: white;
+              
+            }
+            .modal-body{
+              /*width: 60%;
+              top: 40%;*/
+              max-height: calc(100vh - 100px);
+              /*px was at 200*/
+              overflow-y: auto;
+              font-family: Arial;
+              
+              
+            }
+            .modal-float:hover{overflow-y: auto;}
+
+            .modal-float{
+              width: 100%;
+              top: 10%;
+              height:100%;
+              padding: 4px;
+              float: left;
+              margin-top: 20px;
+              background-color: white;
+              border: 2px;
+              border-style: solid;
+              border-color: rgb(122, 122, 122);
+              /*padding-right: 20px;*/
+              /*overflow-y: initial;*/
+              
+            }
+            /*.modal-float .modal-img{
+              width: 100%;
+            }*/
+            .modal-title{
+              text-align: center;
+              z-index:1;
+            }
+            .modal-maincontent{
+              
+              margin-left: auto;
+              margin-right: auto;
+              width: 210mm;
+              font-size: 20px;
+            }
+            .modal-secondarycontent{
+              margin-left: auto;
+              margin-right: auto;
+              width: 210mm;
+              font-size:15px;
+            }
+            .modal-code{
+              margin-left: auto;
+              margin-right: auto;
+              background-color:black;
+              color: white;
+              font-size: 15px;
+              width: 180mm;
+              padding: 1.5%;
+            }
+
+
+
+        </style>
+
+        <div class="mx-auto">
+            <button class="button" style="vertical-align:middle"><span>More Blogs</span></button>
+
+          </div>
+      </div>
+
+  </div>
+
+  <!-- modal popups here-->
+ <div id = "my-modal" class ="modal">
+
+    <!-- close button-->
+    
+    <!-- content for Modal-->
+    <div class= "modal-content ">
+        
+      <div class = "blog-preview">
+          <div class = "modal-header">
+              <span class= "close" onclick = "closeModal()">&times;</span> 
+            
+          </div>
+          
+          <div class = "modal-body modal-body-scrollable">
+              
+            
+
+            <div class ="modal-float">
+                
+              <div class = "modal-title">
+                  
+                  
+                  <h2><strong>
+                    How Django works</strong></h2>
+                  <h6>June 14, 2020</h6>
+                  
+                </p> 
+              </div>
+            
+              <img src= "{% static 'website/images/pythonscript.jpg' %}">
+              <p>&nbsp;</p>
+              
+                <div class="modal-maincontent">
+                  <strong>
+                      My website has been created using a web framework called Django. Django is an open source high-level python script that takes care of the base website, allowing the main programmers focus to lie on writing the app. 
+                  </strong>
+                </div>
+                
+                <div class="modal-secondarycontent">
+                    <p>&nbsp;</p>
+                    <img src= "{% static 'website/images/django1.png' %}">
+                    <p>&nbsp;</p>
+
+                    In a Django driven website, the app waits for a HTTP request from the client before showing the content. The URL function (urls.py) processes the requests sent from the client and maps them to the appropriate ‘View’,  webpage, by searching the string patterns created by the user. A URL mapper (urlpatterns) is responsible for creating paths to other areas in the website. In my website, I have created other HTML documents to expand on the website created in hand. 
+                
+                  </div>
+                <p>&nbsp;</p>
+                <div class="modal-code">
+                    urlpatterns = [
+                    <br> &nbsp;&nbsp; path(&nbsp;<span style="color:orange;">'&nbsp;'</span>, views.home, <span style="color:rgb(131, 210, 236)">name</span>=<span style="color:orange;">"home"</span>),
+                    <br> &nbsp;&nbsp; path(&nbsp;<span style="color:orange;">'blog.html'</span>, views.blog, <span style="color:rgb(131, 210, 236)">name</span>=<span style="color:orange;">"blog"</span>),
+                    <br> &nbsp;&nbsp; path(&nbsp;<span style="color:orange;">'blog1.html'</span>, views.blog1, <span style="color:rgb(131, 210, 236)">name</span>=<span style="color:orange;">"blog1"</span>),
+                    <br>]
+                </div>
+                <div class="modal-secondarycontent">
+                    &nbsp;
+                    Using the data given by the URL function, views.py is the main body of the website, linking the HTTP responses to templates and models. All of these functions use render() which creates a HTTP request that is relayed back to the client. It links the HTML file back to the URL back to the client
+                    &nbsp;
+                  </div>
+                <div class="modal-code">
+                  <span style="color:rgb(98, 96, 235);">def</span> <span style="color:rgb(202, 193, 107);">home</span>(<span style="color:rgb(131, 210, 236)">request</span>):
+                  <br>&nbsp;&nbsp;<span style="color:rgb(218, 149, 250);">return</span> render(request, <span style="color:orange;">'home.html'</span>,{})
+                  <br><span style="color:rgb(98, 96, 235);">def</span> <span style="color:rgb(202, 193, 107);">blog</span>(<span style="color:rgb(131, 210, 236)">request</span>):
+                  <br>&nbsp;&nbsp;<span style="color:rgb(218, 149, 250);">return</span> render(request, <span style="color:orange;">'blog.html'</span>,{})
+                  <br><span style="color:rgb(98, 96, 235);">def</span> <span style="color:rgb(202, 193, 107);">blog1</span>(<span style="color:rgb(131, 210, 236)">request</span>):
+                  <br>&nbsp;&nbsp;<span style="color:rgb(218, 149, 250);">return</span> render(request, <span style="color:orange;">'blog1.html'</span>,{})
+                </div>
+                <div class="modal-secondarycontent">
+                    &nbsp;
+                    Models provides the function to read and write data, formatting them to a data base. Personally for my portfolio website, I didn’t add anything into this python file; as I had nothing to put into the database. 
+                    <br>After being requested from views, the template file contains HTML (hypertext mark-up language); this is what the user controls in the website. 
+                </div>
+                <div class = "modal-title">
+                    <h3><strong>HTML file</strong></h3>
+                    &nbsp;
+                </div>
+                <div class="modal-secondarycontent">
+                    My home page is contained in the file home.html, which is a HTML5 file. Before creating this website I felt quite confident in HTML programming so I had high ambitions. Following off templates, I knew how I wanted the website to look. 
+                    <br>
+                    I used a modular based approach for the website, where each scroll down had its own Div class, this made it easier to edit the code; and add pre-sets in.
+
+                    <br>
+                    For my blog page I wanted to add modals, a graphical interface that goes over the applications main window; I found this the most challenging part of creating this website. First off I created a simple modal, using the built in HTML modal class; this worked well for just one modal however, on my home screen I needed multiple amounts of modals to be shown. Instead of copying the code again and changing the code for each of the ‘learn more’ buttons, I went back to the drawing board. I used a method called .getElementsByClassName, in Javascript, which searches the whole document for the phrase indented in the brackets; and gives each of the functions a numerical value. 
+                </div>
+                <div class="modal-code">
+
+                    <span style="color:rgb(98, 96, 235);">var</span> <span style="color:rgb(131, 210, 236)">slidesJS</span> = <span style="color:rgb(131, 210, 236)">document</span><span style="color:rgb(202, 193, 107);">.getElementsByClassName</span>(<span style="color:orange;">"blog-preview"</span>);
+                </div>
+                <div class="modal-secondarycontent">
+                    The selection of modals is processed through the slideIndex number, which looks at which modal expansion is pressed. This is an example of the code used with the ‘onclick’ button function. The modal gets opened with the 2nd modal content.
+                </div>
+                <div class="modal-code">
+                    <span style="color:rgb(202, 193, 107);">openModal</span><span style="color:orange;">()</span>;<span style="color:rgb(202, 193, 107);">currentSlide</span><span style="color:orange;">(</span>2<span style="color:orange;">)</span>
+                </div>
+                <div class="modal-secondarycontent">
+                    Another difficulty faced was the ‘overflow’ function, which disables the scroll feature when the modal is open. Typically modals are small overlays that don’t cover the whole screen however, my modals contained a whole blog that required scrolling. Therefore, with scrolling disabled I could neither scroll on the main page or the overlay. After many hours spent on stack overflow, I found that I needed to use a different display style with the modal but also had to change the body’s documentation to allow this change in users actions. 
+                    <br>My website also contains a downloadable CV and a contact me page, that sends an email to my personal email address.  
+                </div>
+                <div class = "modal-title">
+                    <h3><strong>Implantation of static files</strong></h3>
+                    &nbsp;
+                </div>
+                <div class="modal-secondarycontent">
+                    &nbsp;
+                    Static files in HTML allow the access of Images, CSS and Javascript files on the website through the directory 
+                    &nbsp;
+                  </div>
+                <div class="modal-maincontent">
+                    ----Static
+                    <br>&nbsp;&nbsp;&nbsp;|----CSS
+                    <br>&nbsp;&nbsp;&nbsp;|----Images
+                    <br>&nbsp;&nbsp;&nbsp;| ---Js
+          
+                </div>
+                <div class="modal-secondarycontent">
+                    &nbsp;
+                    When loading static files in you have to open static files at the start using:
+                    &nbsp;
+                </div>
+                <div class="modal-code">
+                    % load static %
+                </div>
+                <div class = "modal-title">
+                    <h3><strong>Using CSS files</strong></h3>
+                    &nbsp;
+                </div>
+                <div class="modal-secondarycontent">
+                    CSS stands for Cascading Style Sheets, and controls the layout of the web page. They are used for nearly every design element of making a website. For my website I showed all three ways to use CSS, Inline, Internal and External. Inline, uses ‘style’ on the same line as the words
+                </div>
+                <div class="modal-code">
+                    <span style="color:rgb(131, 210, 236)">style</span>=<span style="color:orange;">"color:black ;"</span>
+                </div>
+                <div class="modal-secondarycontent">
+                    Internal CSS was used in my HTML for button styling and modal styling, this could’ve been added to an external CSS file however, I decided to put it in my main file for ease of use when creating the modals. 
+                </div>
+                <div class="modal-code">
+                  "<span style="color:rgb(98, 96, 235);">style</span>"
+                </div>
+                <div class="modal-secondarycontent">
+                    Finally, External Cascading sheets are used for the majority of the styling.
+                </div>
+                <div class="modal-code"> 
+
+                    <span style="color:rgb(202, 193, 107);">body</span> {
+                <br>&nbsp;&nbsp;&nbsp;  <span style="color:rgb(131, 210, 236)">font-family</span>:<span style="color:orange;">'Lato', sans-serif</span>;
+                <br>&nbsp;&nbsp;&nbsp; <span style="color:rgb(131, 210, 236)">overflow</span>:<span style="color:orange;">hidden</span>;
+                <br>&nbsp;&nbsp;&nbsp;  <span style="color:rgb(131, 210, 236)">overflow-y</span>:<span style="color:orange;">scroll</span>;
+                <br>&nbsp;&nbsp;&nbsp;  <span style="color:rgb(131, 210, 236)">background-color</span>:<span style="color:orange;"> #000</span>;
+                <br>}
+                </div>
+                <div class = "modal-title">
+                    <h3><strong>Using Java script</strong></h3>
+                    &nbsp;
+                </div>
+                <div class="modal-secondarycontent">
+                    Javascript is added into pages to add interactivity for the user on the page. For my website, I used some templates to give the effect I was after; such as PixelCog’s Parallax and lots of bootstraps javascript. This was relatively easy to implement and I had to adjust some of the values to toggle them into position but overall worked well. 
+                </div>
+            </div>
+            
+          </div>
+      </div>
+
+      <div class = "blog-preview">
+         
+          <div class = "modal-header">
+              <span class= "close" onclick = "closeModal()">&times;</span> 
+            
+          </div>
+          
+          <div class = "modal-body modal-body-scrollable">
+              
+            
+
+            <div class ="modal-float">
+                
+              <div class = "modal-title">
+                  
+                  
+                  <h2><strong>
+                    Reflecting on First year</strong></h2>
+                  <h6>June 10, 2020</h6>
+                  
+                </p> 
+              </div>
+            
+              <img src= "{% static 'website/images/Aston.jpg' %}">
+              <p>&nbsp;</p>
+              
+                <div class="modal-maincontent">
+                  <strong>
+                    My first year at the University of Birmingham has come to an end, and although it was short lived; thank you corona, I can’t emphasise how brilliant it was! It only seems like yesterday I was arriving at the university with a car full of new and clean IKEA kitchen ware. Trust me, I went a bit overboard! 
+                  </strong>
+                </div>
+                
+                <div class="modal-secondarycontent">
+                  It’s equally as scary thinking I’ll be a second year student next year, where the work ramps up exponentially. 
+                  Freshers was amazing. I met loads of new people and spent the whole time socialising with everyone. This was the perfect opportunity to join new societies as well, so I joined the go-karting team, the ski-team and also one of the university’s campus football teams. A lot of sport! 
+                  This was also the first time where I had lived away from home, so the challenge of adulthood really stepped in quickly.                   
+                </div>
+                <p>&nbsp;</p>
+                <div class = "modal-title">
+                <h3><strong> First term </strong></h3>
+                </div>
+                <div class="modal-secondarycontent">
+                  Social side aside, I’ve loved the topics I had this year in Computer science. We started the term learning Java script, and although this was a challenge for me at the start, as I had not done computing A-level, after a few weeks I got to grip of it and excelled through the tasks. I learnt a lot during this module, such as the fundamental lesson that planning before starting a project is always the way to go. Collaboration really helped me as well, as in some tasks we got given partially competed code, where we had to continue the coding method to expand this pre-made program. 
+                  <p>&nbsp;</p>
+                  Alongside the Java aspect of the course, we also had Mathematics tuition. This module focused on the mathematics behind Computer Science, covering a range of topics from regular languages to the complexity of NP and P problems. I had to think quite hard in this module, reading around the course to get a full grasp about the power of these mathematic equations.  
+                  <p>&nbsp;</p>
+                  As a Bachelor of Science degree apprenticeship student with Vodafone, I was required to study Finance and Business Management as part of my widening horizons modules. Their goal was to give me insight into how organisations are structured; from how they work their balance sheet to understanding EBITDA formulas . It really helped having past experience in Economics for this module, as I could implement everything I learnt for a level into my end of year dissertation. 
+                </div>
+                <div class = "modal-title">
+                  <h3><strong> Second term </strong></h3>
+                </div>
+                <div class="modal-secondarycontent">
+                    The second term consisted of Robotics, Artificial intelligence and Logic & Computation. I loved Robotics because we could see our code running on a machine, instead of just a computer. Hardware vs Software was a problem for the robots as we would code a piece of software that would complete every task when tested in a software sandbox but fail in a real-life. This involved a lot of trial and error but I thoroughly enjoyed this process.
+                  <p>&nbsp;</p>
+                  I found Artificial Intelligence the hardest topic in Computer Science, as I was introduced to many alien terms. It took time to fully understand the ideas around machine learning and all of the equations behind it.
+                  <p>&nbsp;</p>
+                  
+                  Logic and Computation took a lot of time to fully understand but as the name suggests, when fully understood, was quite logical! The complexity of the topics increased every week and it was essential that I understood the basic ideas in order to extend my thinking.
+                </div>
+            </div>
+            
+          </div>
+        
+          
+      </div>
+
+      <div class = "blog-preview">
+          <div class = "modal-header">
+              <span class= "close" onclick = "closeModal()">&times;</span> 
+            
+          </div>
+          
+          <div class = "modal-body modal-body-scrollable">
+              
+            
+
+            <div class ="modal-float">
+                
+              <div class = "modal-title">
+                  
+                  
+                  <h2><strong>
+                      What I'm looking forward to next year</strong></h2>
+                  <h6>June 9, 2020</h6>
+                  
+                </p> 
+              </div>
+            
+              <img src= "{% static 'website/images/birmingham.jpg' %}">
+              <p>&nbsp;</p>
+              
+                <div class="modal-maincontent">
+                  <strong>
+                      After an amazing first year, I can’t wait to see what the next year holds for my academic growth. For the second year there are 6 compulsory modules. 
+                  </strong>
+                </div>
+                
+    
+                <p>&nbsp;</p>
+                <div class = "modal-title">
+                <h3><strong> Functional Programming </strong></h3>
+                </div>
+
+                <div class="modal-secondarycontent">
+                    This module seems to build on the Logic and Computational side of first year, developing my programming skills. I’m really looking forward to the algorithmic side of the framework. I think this will further increase my design skills as well with functional programming.
+                </div>
+                <p>&nbsp;</p>
+                <div class = "modal-title">
+                <h3><strong> Mathematical Modelling and Decision Making </strong></h3>
+                </div>
+
+                <div class="modal-secondarycontent">
+                    The mathematical module is in semester 2 and requires a base understanding in AI. Although Artificial Intelligence wasn’t my favourite during first year I am looking forward to creating probabilistic models that model the world, taking into account uncertainty. 
+                </div>
+                <p>&nbsp;</p>
+                <div class = "modal-title">
+                <h3><strong> Security and Networks </strong></h3>
+                </div>
+
+                <div class="modal-secondarycontent">
+                    Unlike the other modules, this is a fresh topic starter. I’m really looking forward to protecting computers from attacks and reducing vulnerabilities. Over the summer I have been looking into security protocols so I am really looking forward to this module; especially ‘cryptography’ in the learning outcomes.  
+                </div>
+                <p>&nbsp;</p>
+                <div class = "modal-title">
+                <h3><strong> 
+                    Software Engineering
+                </strong></h3>
+                </div>
+
+                <div class="modal-secondarycontent">
+                    Programming in java is a Pre-request of this module, as this module analyses large scale software systems.     
+                </div>
+                <p>&nbsp;</p>
+                <div class = "modal-title">
+                <h3><strong> 
+                    Systems Programming in C/C++
+                </strong></h3>
+                </div>
+
+                <div class="modal-secondarycontent">
+                    I have never programmed in C or C++ so I am looking forward to learning a versatile programming language.
+                </div>
+
+                <p>&nbsp;</p>
+                <div class = "modal-title">
+                <h3><strong> 
+                    Team Project
+                </strong></h3>
+                </div>
+
+                <div class="modal-secondarycontent">
+                    Team work is very important in modern day programming so I am looking forward to the corporation between teams. This links quite heavily with my summer internship job, being a scrum master (that takes the responsibility of looking after teams in development). Hopefully I can use these skills within the team work.
+                </div>
+
+
+              
+            </div>
+            
+          </div>
+      </div>
+
+      <div class = "blog-preview">
+          <div class = "modal-header">
+              <span class= "close" onclick = "closeModal()">&times;</span> 
+            
+          </div>
+          
+          <div class = "modal-body modal-body-scrollable">
+              
+            
+
+            <div class ="modal-float">
+                
+              <div class = "modal-title">
+                  
+                  
+                  <h2><strong>
+                      Gold Duke of Edinburgh Award</strong></h2>
+                  <h6>June 7, 2020</h6>
+                  
+                </p> 
+              </div>
+            
+              <img src= "{% static 'website/images/dartmoor.jpg' %}">
+              <p>&nbsp;</p>
+              
+                <div class="modal-maincontent">
+                  <strong>
+                      I'm delighted to have completed my gold Duke of Edinburgh Award and enjoyed my recent trip to the Palace to meet the Earl of Wessex.    
+                  </strong>
+                </div>
+                
+    
+                <p>&nbsp;</p>
+              
+                <div class="modal-secondarycontent">
+                    I found the final expedition to be the hardest element. We decided that Dartmoor gave us the best potential to meet all the objectives set but the weather made the five day expedition the largest challenge. The mix of torrential rainfall followed by a seemingly tropical heatwave led this being a very large challenge but the sense of accomplishment on the final day was fantastic.
+                    &nbsp;
+                    <br>My volunteering was completed through my leadership of Reddam House CCF contingent, where I held the position of Colour Sergeant, with responsibility for organising the training and supervision of the younger and lower rank cadets.  For my physical element I developed my love of football, tennis and cross country. Initially, I hoped that my A level Art would qualify for the skills section, but was guided to choose another area, so focussed on cookery.
+                    &nbsp;
+                    <br>This cooking skill was put to good use on Dartmoor and also in my first year in self-catering accommodation; I’ve definitely become quite inventive about making meals out of limited ingredients!
+                </div>
+                
+                
+
+                
+
+
+              
+            </div>
+            
+          </div>
+      </div>
+
+
+    </div>
+    
+ </div>
+
+  
+
+  <!-- start of the gallery-->
+
+
+    <div class="row gallery">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body mb-4 wow bounceInLeft" data-wow-delay=".25s">
+            <h4 class="card-title">CODING</h4>
+            <p class="card-text">I just wanted to sincerely thank you for the opportunity to represent Precision Nutrition and the US at such an amazing event. </p>
+          </div>
+          <img class="card-img-top img-fluid wow bounceInRight" data-wow-delay=".25s" src="{% static 'website/images/karting.jpg' %}" alt="Card image"> </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card"> <img class="card-img-top img-fluid wow bounceInUp" data-wow-delay=".25s" src="{% static 'website/images/art.jpg' %}" alt="Card image">
+          <div class="card-body mt-4 wow bounceInDown" data-wow-delay=".25s">
+            <h4 class="card-title">CREATIVITY</h4>
+            <p class="card-text">I just wanted to sincerely thank you for the opportunity to represent Precision Nutrition and the US at such an amazing event. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body mb-4 wow bounceInRight" data-wow-delay=".25s">
+            <h4 class="card-title">PUBLIC SPEAKING</h4>
+            <p class="card-text">During my time at school I got the responsibility of being Head Boy. Having good public awareness and social skills was a critical part of this role.  </p>
+          </div>
+          <img class="card-img-top img-fluid wow bounceInLeft" data-wow-delay=".25s" src="{% static 'website/images/ccf.jpg' %}" alt="Card image"> </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<footer class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 footer1 d-flex wow bounceInLeft" data-wow-delay=".25s">
+      </div>
+      <div class="col-md-6 footer2 wow bounceInUp" data-wow-delay=".25s" id="contact">
+        <div class="form-box">
+          <h4>CONTACT ME</h4>
+          <table class="table table-responsive d-table">
+            <tr>
+              <td><input type="text" class="form-control pl-0" placeholder="NAME" /></td>
+              <td><input type="email" class="form-control pl-0" placeholder="EMAIL" /></td>
+            </tr>
+            <tr>
+              <td colspan="2"></td>
+            </tr>
+            <tr>
+              <td colspan="2"><input type="text" class="form-control pl-0" placeholder="ADDRESS" /></td>
+            </tr>
+            <tr>
+              <td colspan="2"></td>
+            </tr>
+            <tr>
+              <td colspan="2"><input type="text" class="form-control pl-0" placeholder="MESSAGES" /></td>
+            </tr>
+            <tr>
+              <td colspan="2"></td>
+            </tr>
+            <tr>
+              <td colspan="2" class="text-center pl-0"><button type="submit" class="btn btn-dark">SEND</button></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="col-md-3 footer3 wow bounceInRight" data-wow-delay=".25s">
+        
+        <h5></h5>
+        <p></p>
+        <h5></h5>
+        <p></p>
+        
+        <h5>EMAIL</h5>
+        <p>jonathan.dain@icloud.com</p>
+        
+        <div class="social-links">
+          <ul class="nav nav-item">
+            <!--<li><a href="https://www.facebook.com/jonathan.dain.967" class="btn btn-secondary mr-1 mb-2"><img src="{% static 'website/images/facebook.png' %}" alt="facebook" /></a></li>-->
+            <li><a href="https://www.linkedin.com/in/jonathan-dain-753173151/?originalSubdomain=uk"  class="btn btn-secondary mr-1 ml-1 mb-2"><img src="{% static 'website/images/linkedin.png' %}" alt="facebook" /></a></li>
+            <!-- <li><a href="#"  class="btn btn-secondary mr-1 ml-1 mb-2"><img src="{% static 'website/images/instagram.png' %}" alt="facebook" /></a></li>-->
+            <li><a href="https://github.com/Jonnygreg"  class="btn btn-secondary ml-1 mb-2"><img src="{% static 'website/images/github.png' %}" alt="facebook" /></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</footer>
+
+
+
+<!-- Optional JavaScript --> 
+<!-- jQuery first, then Bootstrap JS, ... -->
+
+<script src="{% static 'website/js/jquery.min.js' %}"></script>
+<script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'website/js/parallax.js' %}"></script>
+<script src="{% static 'website/js/wow.js' %}"></script>
+<script src="{% static 'website/js/main.js' %}"></script>
+
+<script type = "text/JavaScript">
+  /*open modal*/
+  function openModal(){
+    document.getElementById('my-modal').style.display = "inline-flex";
+    document.body.style.overflow = "hidden";
+  }
+  function closeModal(){
+    document.getElementById('my-modal').style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+  var slideInextJS = 1;
+
+  showSlides(slideIndexJS);
+
+  function currentSlide(n){
+    showSlides(slideIndexJS = n);
+  }
+
+  function showSlides(n){
+    var i;
+    var slidesJS = document.getElementsByClassName("blog-preview");
+
+    for (i = 0; i <slidesJS.length; i++ ){
+      slidesJS[i].style.display = "none";
+
+    }
+    slidesJS[slideIndexJS - 1].style.display = "block";
+  }
+
+</script>
+
+
+
+</body>
+</html>

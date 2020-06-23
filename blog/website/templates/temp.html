@@ -1,0 +1,508 @@
+{% load static %}
+<!doctype html>
+<!--
+	Fox by FreeHTML5.co
+	Twitter: https://twitter.com/fh5co
+	Facebook: https://fb.com/fh5co
+	URL: https://freehtml5.co
+-->
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Jonny Dain</title>
+
+
+
+  <!-- Bootstrap CSS -->
+  <link href="{% static 'website/css/animate.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'website/css/bootstrap.min.css' %}" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+</head>
+
+
+<body>
+
+
+<div class="container-fluid pl-0 pr-0 bg-img clearfix parallax-window2" data-parallax="scroll" data-image-src="{% static 'website/images/bannerbig.jpg' %}">
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container"> 
+      <!-- Brand 
+      <a class="navbar-brand mr-auto" href="#"><img src="{% static 'website/images/logo.png' %}" alt="FoxPro" /></a> 
+    -->
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>
+      
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"> <a class="nav-link" href="#">Home</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#about-us">About me</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="{% url 'blog' %}">Blog</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Portfolio</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a> </li>
+        </ul>
+        <!--
+        <ul class="navbar-nav ml-5">
+          <li class="nav-item"> <a class="nav-link btn btn-danger" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> </li>
+        </ul>
+        --->
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="fh5co-banner-text-box">
+      <div class="quote-box pl-5 pr-5 wow bounceInRight">
+        <h2> Jonathan Dain <br><span>computer scientist</span> </h2>
+      </div>
+      <a href="#" class="btn text-uppercase btn-outline-danger btn-lg mr-3 mb-3 wow bounceInUp">Download Curriculum Vitae</a> 
+      <!--<a href="#" class="btn text-uppercase btn-outline-danger btn-lg mb-3 wow bounceInDown"> Courses</a>--> </div>
+  </div>
+</div>
+
+
+<div class="container-fluid fh5co-network">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h4 class="wow bounceInUp">UNIVERSITY OF</h4>
+        <h2 class="wow bounceInRight">BIRMINGHAM</h2>
+        <hr />
+        <h5 class="wow bounceInLeft">FROM 2019 TILL 2023</h5>
+        <p class="wow bounceInDown">Whilst studying at the university of Birmingham, doing computer science; I was lucky enough to recieve funding through Vodafone being a digital degree Apprentice. Out of 3000 people that applied I was lucky enough to reach the top 10 and make it onto the course. My computer science course also works in conjunction with Business and finance managment, teaching me suitable skills for the workplace </p>
+      </div>
+      
+      <div class="col-md-6">
+        <figure class="wow bounceInDown"> <img src="{% static 'website/images/aboutimg.jpg' %}" alt="gym" class="img-fluid" /> </figure>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div id="about-us" class="container-fluid fh5co-about-us pl-0 pr-0 parallax-window" data-parallax="scroll" data-image-src="{% static 'website/images/midbackground.jpg' %}">
+  <div class="container">
+    <div class="col-sm-6 offset-sm-6">
+      <h2 class="wow bounceInLeft" data-wow-delay=".25s">ABOUT ME</h2>
+      <hr/>
+      <p class="wow bounceInRight" data-wow-delay=".25s">I'm pretty cool</p>
+      <a class="btn btn-lg btn-outline-danger d-inline-block text-center mx-auto wow bounceInDown">Learn More</a> </div>
+  </div>
+</div>
+<div class="container-fluid fh5co-content-box">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 pr-0"><img src="{% static 'website/images/me.jpg' %}" alt="gym" class="img-fluid wow bounceInLeft" /> </div>
+      <div class="col-md-7 pl-0">
+        <div class="wow bounceInRight" data-wow-delay=".25s">
+          <div class="card-img-overlay">
+            <p>I Studied at RHB (Reddam House Berkshire) from year 5 through to year 13, undertaking both my A-levels and GCSE's through the school.
+              My keen love for Art and Computing comes from my GCSE years when I found myself spending extra hours finishing off projects. Unfortunetly Computing wasn't provided by the school so I could only took my Art skills further in A-level
+            </p>
+          </div>
+          <img src="{% static 'website/images/school.jpg' %}" alt="girls in gym" class="img-fluid" /> </div>
+      </div>
+    </div>
+    
+
+  
+    <div class="row trainers pl-0 pr-0" >
+      <div class="col-12 bg-50">
+        <div class="quote-box2 wow bounceInDown" data-wow-delay=".25s">
+          <h2> RECENT BLOG POSTS </h2>
+        </div>
+      </div>
+      <div class="col-md-6 pr-5 pl-5">
+        <div class="card text-center wow bounceInLeft" data-wow-delay=".25s"> <img class="card-img-top rounded-circle img-fluid" src="{% static 'website/images/python.jpg' %}" alt="Card image">
+          <div class="card-body mb-5">
+            <h4 class="card-title">How Django works</h4>
+            <p class="card-text">This is a blog post discussing how my site is structured and an overall picture of how django works.</p>
+            <a class="btn btn-lg btn-outline-danger d-inline-block text-center mx-auto wow bounceInDown"  onclick = "openModal();currentSlide(1)">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 pl-5 pr-5">
+        <div class="card text-center wow bounceInRight" data-wow-delay=".25s"> <img class="card-img-top rounded-circle img-fluid" src=" {% static 'website/images/firstyear.jpg' %}" alt="Card image">
+          <div class="card-body mb-5">
+            <h4 class="card-title">First year work</h4>
+            <p class="card-text">With so much work leading up to university this post reflects on what I enjoyed in first year.</p>
+            <a class="btn btn-lg btn-outline-danger d-inline-block text-center mx-auto wow bounceInDown" onclick = "openModal();currentSlide(2)">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 pr-5 pl-5">
+          <div class="card text-center wow bounceInLeft" data-wow-delay=".25s"> <img class="card-img-top rounded-circle img-fluid" src="{% static 'website/images/books.jpg' %}" alt="Card image">
+            <div class="card-body mb-5">
+              <h4 class="card-title">Second year work</h4>
+              <p class="card-text">With second year just around the corner, this post shares what I am looking foward to next year.</p>
+              <a class="btn btn-lg btn-outline-danger d-inline-block text-center mx-auto wow bounceInDown"  onclick = "openModal();currentSlide(3)">Learn More</a>
+            </div>
+          </div>
+        </div>
+      <div class="col-md-6 pl-5 pr-5">
+          <div class="card text-center wow bounceInRight" data-wow-delay=".25s"> <img class="card-img-top rounded-circle img-fluid" src=" {% static 'website/images/dofe.jpg' %}" alt="Card image">
+            <div class="card-body mb-5">
+              <h4 class="card-title">Gold Dofe</h4>
+              <p class="card-text">dofe</p>
+              <a class="btn btn-lg btn-outline-danger d-inline-block text-center mx-auto wow bounceInDown"   onclick = "openModal();currentSlide(4)">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <style>
+            .button {
+              display: inline-block;
+              border-radius: 4px;
+              background-color: #ff8013;
+              border: none;
+              color: #FFFFFF;
+              text-align: center;
+              font-size: 28px;
+              padding: 20px;
+              width: 300px;
+              transition: all 0.5s;
+              cursor: pointer;
+              margin: 5px;
+            }
+            
+            .button span {
+              cursor: pointer;
+              display: inline-block;
+              position: relative;
+              transition: 0.5s;
+            }
+            
+            .button span:after {
+              content: '\00bb';
+              position: absolute;
+              opacity: 0;
+              top: 0;
+              right: -20px;
+              transition: 0.5s;
+            }
+            
+            .button:hover span {
+              padding-right: 25px;
+            }
+            
+            .button:hover span:after {
+              opacity: 1;
+              right: 0;
+            }
+            .modal{
+              display: none;
+              position: fixed;
+              z-index: 1;
+              padding: 5px 0;
+              left: 0;
+              top: 0; 
+              width: 100%;
+              height: 100%; 
+              overflow: auto;
+              background-color: rgba(0,0,0,0.8); 
+
+              
+            }
+            .modal-content{
+              position: fixed;
+              top: 50%;
+              left: 50%;
+              height: 90%;
+              
+              transform: translate(-50%,-50%);
+              width: 80%;
+              padding: 0px;
+              box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+              background: rgb(223, 222, 222);
+              
+              
+              transition: 0.5s;
+              overflow-y: initial;
+
+            }
+            .modal-header{
+              background: rgb(236, 152, 84);
+              padding: 15px;
+              color: white;
+              box-shadow: 0 5px 8px 0 rgba(0, 0, 0, .30), 0 7px 20px 0 rgba(0, 0, 0, .30)
+
+            }
+            .close{
+              float: right;
+              font-size: 30px;
+              color: white;
+              
+            }
+            .modal-body{
+              /*width: 60%;
+              top: 40%;*/
+              max-height: calc(100vh - 200px);
+              overflow-y: auto;
+              font-family: Arial;
+              
+              
+            }
+            .modal-float:hover{overflow-y: auto;}
+
+            .modal-float{
+              width: 80%;
+              top: 40%;
+              padding: 4px;
+              float: left;
+              margin-top: 20px;
+              background-color: white;
+              border: 2px;
+              border-style: solid;
+              border-color: rgb(122, 122, 122);
+              padding-right: 20px;
+              /*overflow-y: initial;*/
+            }
+            .modal-float-right{
+              width: 18.5%;
+              top: 40%;
+              float: right;
+              padding: 4px;
+              margin-top: 20px;
+              background-color: white;
+              border: 2px;
+              border-style: solid;
+              border-color: rgb(122, 122, 122);
+              padding-right: 20px;
+            }
+            
+
+
+
+
+        </style>
+
+        <div class="mx-auto">
+            <button class="button" style="vertical-align:middle"><span>More Blogs</span></button>
+
+          </div>
+      </div>
+
+  </div>
+
+  <!-- modal popups here-->
+ <div id = "my-modal" class ="modal">
+
+    <!-- close button-->
+    
+    <!-- content for Modal-->
+    <div class= "modal-content ">
+        
+      <div class = "blog-preview">
+        <span class= "close" onclick = "closeModal()">&times;</span> 
+        <div class = "numbertext">1 / 4</div>
+        
+
+      </div>
+      <div class = "blog-preview">
+          <div class = "modal-header">
+            <h2>First year work</h2>
+            <span class= "close" onclick = "closeModal()">&times;</span> 
+          </div>
+          <div class = "modal-body modal-body-scrollable">
+            
+
+            <div class ="modal-float">
+              <h2>First year</h2>
+              <h5>June 10, 2020</h5>
+                My first year at the University of Birmingham has come to an end, and although it was short lived; thank you corona, I can’t emphasise how quickly it has gone! It only seems like yesterday I was arriving at the university with a car full of new and clean IKEA kitchen ware. Trust me, I went a bit overboard! It’s equally as scary thinking I’ll be a second year student next year, where the work ramps up exponentially. 
+                Freshers was amazing. I met loads of new people and spent the whole time socialising with everyone. This was the perfect opportunity to join new societies as well, so I joined the go-karting team, the ski-team and also one of the university’s campus football teams. A lot of sport! 
+                This was also the first time where I had lived away from home, so the challenge of adulthood really stepped in quickly. 
+            </div>
+            <div class = "modal-float-right">
+                yeah yeah
+              </div>
+  
+            
+            <div class ="modal-float">
+              <h3>First terms work</h3>
+              
+                <p>Social side aside, I’ve loved the topics I had this year in Computer science. We started the term learning Java script, and although this was a challenge for me at the start; as I had not done computing A-level, after a few weeks I got to grip of it and excelled through the tasks. I learnt a lot during this module, such as the fundamental lesson that planning before starting a project is always the way to go. Collaboration really helped me as well, as in some tasks we got given partially competed code, where we had to expand off the different methods. /p>
+                Alongside the java aspect of the course, we also had Mathematics. This module focused on the mathematics behind computer science, covering a range of topics from regular languages to the complexity of NP and P problems. I had to think quite hard in this module, reading around the course to get a full grasp about the power these mathematic equations had.  
+                Due to being on a Bachelor of Science degree with Vodafone, I got given finance and business management as my widening horizons modules. Their goal was to give me a further insight into how organisations are structured and how they work their balance sheet. It really helped having past experience in Economics for this module, as I could implement everything I learnt for a level into my end of year dissertation. 
+              </div><div class ="modal-float">
+              <h3>second terms work</h3>
+
+The second term consisted of Robotics, Artificial intelligence and Logic & computation. I loved Robotics because we could see our code running on a machine, instead of just a computer. Hardware vs software was a problem for the robots, as we would code a piece of software that would complete every task when tested in a software sandbox; however in a real life environment would fail. This involved a lot of trial and error but I toughly enjoyed this process.
+
+I found Artificial intelligence the hardest topic in computer science, as I was introduced to a lot of new alien terms. It took a lot of time to fully understand the ideas around machine learning, and all of the equations behind it.
+
+Logic and computation took a lot of time to fully understand but as the name suggests, when fully understood, it is quite logical. Every week got harder for this topic and understanding the base ideas was very important for this topic. 
+
+            </div>
+            
+          </div>
+        
+          
+      </div>
+      <div class = "blog-preview">
+          <span class= "close" onclick = "closeModal()">&times;</span> 
+          <div class = "numbertext">3 / 4</div>
+          Second year work
+      </div>
+      <div class = "blog-preview">
+          <span class= "close" onclick = "closeModal()">&times;</span> 
+          <div class = "numbertext">4 / 4</div>
+          Gold Dofe
+      </div>
+    </div>
+    
+ </div>
+
+  
+
+  <!-- start of the gallery-->
+
+
+    <div class="row gallery">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body mb-4 wow bounceInLeft" data-wow-delay=".25s">
+            <h4 class="card-title">CODING</h4>
+            <p class="card-text">I just wanted to sincerely thank you for the opportunity to represent Precision Nutrition and the US at such an amazing event. </p>
+          </div>
+          <img class="card-img-top img-fluid wow bounceInRight" data-wow-delay=".25s" src="{% static 'website/images/karting.jpg' %}" alt="Card image"> </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card"> <img class="card-img-top img-fluid wow bounceInUp" data-wow-delay=".25s" src="{% static 'website/images/art.jpg' %}" alt="Card image">
+          <div class="card-body mt-4 wow bounceInDown" data-wow-delay=".25s">
+            <h4 class="card-title">CREATIVITY</h4>
+            <p class="card-text">I just wanted to sincerely thank you for the opportunity to represent Precision Nutrition and the US at such an amazing event. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body mb-4 wow bounceInRight" data-wow-delay=".25s">
+            <h4 class="card-title">PUBLIC SPEAKING</h4>
+            <p class="card-text">During my time at school I got the responsibility of being Head Boy. Having good public awareness and social skills was a critical part of this role.  </p>
+          </div>
+          <img class="card-img-top img-fluid wow bounceInLeft" data-wow-delay=".25s" src="{% static 'website/images/ccf.jpg' %}" alt="Card image"> </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<footer class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 footer1 d-flex wow bounceInLeft" data-wow-delay=".25s">
+        <!--
+        <div class="d-flex flex-wrap align-content-center"> <a href="#"><img src=" {% static 'website/images/logo1.png' %}" alt="logo" /></a>
+        
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+            dolor. Ae</p>
+          <p>&copy; 2018 Foxpro. All rights reserved.<br> Design by <a href="https://freehtml5.co" target="_blank">FreeHTML5</a>.</p>
+        </div>
+        --->
+      </div>
+      <div class="col-md-6 footer2 wow bounceInUp" data-wow-delay=".25s" id="contact">
+        <div class="form-box">
+          <h4>CONTACT ME</h4>
+          <table class="table table-responsive d-table">
+            <tr>
+              <td><input type="text" class="form-control pl-0" placeholder="NAME" /></td>
+              <td><input type="email" class="form-control pl-0" placeholder="EMAIL" /></td>
+            </tr>
+            <tr>
+              <td colspan="2"></td>
+            </tr>
+            <tr>
+              <td colspan="2"><input type="text" class="form-control pl-0" placeholder="ADDRESS" /></td>
+            </tr>
+            <tr>
+              <td colspan="2"></td>
+            </tr>
+            <tr>
+              <td colspan="2"><input type="text" class="form-control pl-0" placeholder="MESSAGES" /></td>
+            </tr>
+            <tr>
+              <td colspan="2"></td>
+            </tr>
+            <tr>
+              <td colspan="2" class="text-center pl-0"><button type="submit" class="btn btn-dark">SEND</button></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="col-md-3 footer3 wow bounceInRight" data-wow-delay=".25s">
+        
+        <h5></h5>
+        <p></p>
+        <h5></h5>
+        <p></p>
+        
+        <h5>EMAIL</h5>
+        <p>jonathan.dain@icloud.com</p>
+        
+        <div class="social-links">
+          <ul class="nav nav-item">
+            <!--<li><a href="https://www.facebook.com/jonathan.dain.967" class="btn btn-secondary mr-1 mb-2"><img src="{% static 'website/images/facebook.png' %}" alt="facebook" /></a></li>-->
+            <li><a href="https://www.linkedin.com/in/jonathan-dain-753173151/?originalSubdomain=uk"  class="btn btn-secondary mr-1 ml-1 mb-2"><img src="{% static 'website/images/linkedin.png' %}" alt="facebook" /></a></li>
+            <!-- <li><a href="#"  class="btn btn-secondary mr-1 ml-1 mb-2"><img src="{% static 'website/images/instagram.png' %}" alt="facebook" /></a></li>-->
+            <li><a href="#"  class="btn btn-secondary ml-1 mb-2"><img src="{% static 'website/images/github.png' %}" alt="facebook" /></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</footer>
+
+
+
+<!-- Optional JavaScript --> 
+<!-- jQuery first, then Bootstrap JS, ... -->
+
+<script src="{% static 'website/js/jquery.min.js' %}"></script>
+<script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'website/js/parallax.js' %}"></script>
+<script src="{% static 'website/js/wow.js' %}"></script>
+<script src="{% static 'website/js/main.js' %}"></script>
+
+<script type = "text/JavaScript">
+  /*open modal*/
+  function openModal(){
+    document.getElementById('my-modal').style.display = "inline-flex";
+    document.body.style.overflow = "hidden";
+  }
+  function closeModal(){
+    document.getElementById('my-modal').style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+  var slideInextJS = 1;
+
+  showSlides(slideIndexJS);
+
+  function currentSlide(n){
+    showSlides(slideIndexJS = n);
+  }
+
+  function showSlides(n){
+    var i;
+    var slidesJS = document.getElementsByClassName("blog-preview");
+
+    for (i = 0; i <slidesJS.length; i++ ){
+      slidesJS[i].style.display = "none";
+
+    }
+    slidesJS[slideIndexJS - 1].style.display = "block";
+  }
+
+</script>
+
+
+
+</body>
+</html>

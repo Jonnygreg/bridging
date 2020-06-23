@@ -1,0 +1,187 @@
+{% load static %}
+<!doctype html>
+<!--
+	Fox by FreeHTML5.co
+	Twitter: https://twitter.com/fh5co
+	Facebook: https://fb.com/fh5co
+	URL: https://freehtml5.co
+-->
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Jonny Dain</title>
+
+
+
+  <!-- Bootstrap CSS -->
+  <link href="{% static 'website/css/animate.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'website/css/bootstrap.min.css' %}" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container"> 
+    <!-- Brand 
+      <a class="navbar-brand mr-auto" href="#"><img src="{% static 'website/images/logo.png' %}" alt="FoxPro" /></a> 
+    -->
+      <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>
+      
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item"> <a class="nav-link" href="{% url 'home' %}">Home</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#about-us">About me</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Blog</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Portfolio</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a> </li>
+    </ul>
+        <!--
+        <ul class="navbar-nav ml-5">
+          <li class="nav-item"> <a class="nav-link btn btn-danger" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> </li>
+        </ul>
+        --->
+    </div>
+</nav>
+
+
+
+
+<main role="main">
+    
+       
+        <div class="jumbotron">
+          <div class="container">
+                <div class="card-body mb-4 wow bounceInLeft" data-wow-delay=".25s">
+                    <h1 class="display-3">Welcome to my blog!</h1>
+                    
+                    <p>This is a page where I share stuff.</p>
+                   
+                </div>
+          
+    </div>
+        
+    </div>
+</div>
+
+<!---
+<div id="about-us" class="container-fluid fh5co-about-us pl-0 pr-0 parallax-window" data-parallax="scroll" data-image-src="{% static 'website/images/bannerbig.jpg' %}">
+    <div class="container">
+      <div class="col-sm-8 offset-sm-1">
+        <h2 class="wow bounceInLeft" data-wow-delay=".25s">ABOUT ME dajdajdajdjadjajdaja</h2>
+        <hr/>
+        <p class="wow bounceInRight" data-wow-delay=".25s">.</p>
+        <a class="btn btn-lg btn-outline-danger d-inline-block text-center mx-auto wow bounceInDown">Learn More</a> </div>
+    </div>
+  </div>
+</div>
+-->
+<body style="background-color:grey;">
+<div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Coding</strong>
+              <h3 class="mb-0">How Django works</h3>
+              <div class="mb-1 text-light">May 22</div>
+              <p class="card-text mb-auto">This is a blog post discussing how my site is structured and an overall picture of how django works.</p>
+              <a href="{% url 'blog1' %}" class="stretched-link">Continue reading</a>
+            </div>
+        
+            <div class="col-auto d-none d-lg-block">
+                
+                <img src="{% static 'website/images/python1.jpg' %}" alt="Card image"> 
+              
+              <!---  <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+           -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success">University</strong>
+              <h3 class="mb-0">First year work</h3>
+              <div class="mb-1 text-light">May 20</div>
+              <p class="mb-auto">With so much work leading up to university this post reflects on what I enjoyed in first year.</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                    <img src="{% static 'website/images/unifirstyear.jpg' %}" alt="Card image"> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+<div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">University</strong>
+              <h3 class="mb-0">Second year work</h3>
+              <div class="mb-1 text-light">May 19</div>
+              <p class="card-text mb-auto">With second year just around the corner, this post shares what I am looking foward to next year.</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                    <img src="{% static 'website/images/secondyear.jpg' %}" alt="Card image"> 
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-warning">Design</strong>
+              <h3 class="mb-0">Post title</h3>
+              <div class="mb-1 text-light">May 17</div>
+              <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+<!---
+      
+        <div class="container">
+         
+          <div class="row">
+            <div class="col-md-4">
+              <h2 class="wow bounceInLeft" data-wow-delay=".25s">ABOUT ME</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+              <h2>Heading</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+              <h2>Heading</h2>
+              <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+          </div>
+      
+          <hr>
+      
+        </div> 
+    --->
+     <!-- </main>-->
+    <script src="{% static 'website/js/jquery.min.js' %}"></script>
+    <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'website/js/parallax.js' %}"></script>
+    <script src="{% static 'website/js/wow.js' %}"></script>
+    <script src="{% static 'website/js/main.js' %}"></script>
+</html>
